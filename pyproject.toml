@@ -6,7 +6,7 @@ authors = ["Álvaro Vázquez Ortiz <alvvazort@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.12,<3.14"
+python = ">=3.11,<3.14"
 atproto = "^0.0.55"
 setuptools = "^75.5.0"
 python-dotenv = "^1.0.1"
