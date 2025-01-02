@@ -24,8 +24,8 @@ def create_post(
 ) -> str | TextBuilder:
     """Create post."""
     post = client_utils.TextBuilder()
-    post.text(f"Popular en X {city} 🌟:")
-    post.text("")
+    post.text(f"Popular en X {city} 🌟:\n")
+    post.text("\n")
     steps = re.split(BOTH_PATTERNS, text)
     for step in steps:
         if re.match(f"({link_pattern})", step):

@@ -52,7 +52,7 @@ def bot_process(city="Madrid"):
     except Exception as e:
         username = None
     print("User: ", username)
-    post = create_post(most_relevant_tweet["text"], username)
+    post = create_post(most_relevant_tweet["text"], username, city)
     print("Post to send: ", post)
     bluesky_client.send_post(post)
 
